@@ -36,6 +36,8 @@ class VecEnv(object):
         self.num_envs = num_envs
         self.observation_space = observation_space
         self.action_space = action_space
+        print("num_envs: {} observation_space: {} action_space: {}".format(self.num_envs, self.observation_space,
+                                                                           self.action_space))
 
     def reset(self):
         """
